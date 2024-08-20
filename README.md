@@ -15,5 +15,7 @@ Clone and open `index.html` in your browser.
 
 ## Contact
 Email: logithaarumugam1854@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/logitha-a-246a74257/
+
 GitHub: https://github.com/LogithaAK
