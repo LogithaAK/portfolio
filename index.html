@@ -10,16 +10,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Light shades for a clean look */
             color: #333;
-            overflow-x: hidden;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         /* Hero Section */
         .hero-section {
             text-align: center;
             padding: 60px 20px;
-            background: url('https://www.transparenttextures.com/patterns/white-bubble.png');
+            background: url('https://www.transparenttextures.com/patterns/white-bubble.png'); /* Bubble pattern background */
             background-size: cover;
             max-width: 900px;
             margin: 60px auto;
@@ -34,28 +34,28 @@
             height: 120px;
             border-radius: 50%;
             display: inline-block;
-            background: #ffffff;
+            background: #ffffff; /* White background for the image */
             line-height: 120px;
             text-align: center;
             color: #333;
             font-size: 60px;
             margin-bottom: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            background-image: url('https://via.placeholder.com/120'); /* Replace with online image URL */
+            background-image: url('file:///c:/Users/LOGITHA/Downloads/logs.jpeg'); /* Local file path for image */
             background-size: cover;
-            background-position: center;
+            background-position: center; /* Center the image within the container */
         }
 
         .hero-section h1 {
             font-size: 2.5em;
             margin: 10px 0;
-            color: #000000;
+            color: #000000; /* Black color for name */
         }
 
         .hero-section h2 {
             font-size: 1.5em;
             margin: 10px 0;
-            color: #333;
+            color: #333; /* Dark grey color for subtitle */
         }
 
         .hero-section p {
@@ -66,6 +66,7 @@
             padding: 0 20px;
         }
 
+        /* Button Container */
         .button-container {
             display: flex;
             justify-content: center;
@@ -76,8 +77,12 @@
             top: 20px;
         }
 
+        .button-container a {
+            text-decoration: none;
+        }
+
         .button-container button {
-            background: linear-gradient(135deg, #ff6f61, #d93a2c);
+            background: linear-gradient(135deg, #ff6f61, #d93a2c); /* Red to dark red gradient */
             color: white;
             border: none;
             padding: 15px 25px;
@@ -112,18 +117,48 @@
             position: relative;
             z-index: 1;
         }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-image">
+            <!-- Circular image for profile -->
+        </div>
+        <h1>Logitha</h1>
+        <h2>B.Tech in Artificial Intelligence and Data Science</h2>
+        <p>I'm Logitha, a third-year student who is excited about exploring new horizons and making a positive impact. I am enthusiastic about learning and eager to embrace new challenges and opportunities.</p>
+        <div class="button-container">
+            <a href="projects.html" target="_blank"><button><span>Projects</span></button></a>
+            <a href="academic.html" target="_blank"><button><span>Academic Details</span></button></a>
+            <a href="internships.html" target="_blank"><button><span>Internships</span></button></a>
+            <a href="contact.html" target="_blank"><button><span>Contact Info</span></button></a>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitha's Projects</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5; /* Light background */
+            color: #333;
+        }
 
-        /* Section Styles */
+        /* Header */
         .header {
-            background: linear-gradient(135deg, #ff6f61, #d93a2c);
+            background: linear-gradient(135deg, #ff6f61, #d93a2c); /* Red gradient */
             color: white;
             padding: 20px;
             text-align: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            border-radius: 10px;
-            max-width: 900px;
-            margin: 20px auto;
         }
 
         .header h1 {
@@ -131,39 +166,106 @@
             font-size: 2.5em;
         }
 
-        .section-content {
+        /* Project Section */
+        .project-section {
             max-width: 900px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
+        }
+
+        .project {
             background: white;
             border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .section-content h2 {
-            color: #000000;
+        .project h2 {
+            color: #000000; /* Black color for project titles */
             margin-top: 0;
             font-size: 1.8em;
         }
 
-        .section-content p {
+        .project p {
             font-size: 1.1em;
-            color: #555;
+            color: #555; /* Dark grey color for descriptions */
             line-height: 1.6;
         }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Projects</h1>
+    </div>
 
-        .section-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 10px;
+    <div class="project-section">
+        <!-- Credit Card Fraud Detection Project -->
+        <div class="project">
+            <h2>Credit Card Fraud Detection</h2>
+            <p>This project involves developing a machine learning model to detect fraudulent credit card transactions. By analyzing transaction patterns and using various classification algorithms, the system aims to identify and prevent fraudulent activities effectively.</p>
+        </div>
+
+        <!-- Book Recommendation System -->
+        <div class="project">
+            <h2>Book Recommendation System</h2>
+            <p>This system recommends books using the Google Books API. It includes sentiment analysis to enhance recommendations based on user reviews and preferences. The project aims to provide personalized book suggestions by analyzing user interests and feedback.</p>
+        </div>
+
+        <!-- Web Vulnerability Scanner -->
+        <div class="project">
+            <h2>Web Vulnerability Scanner</h2>
+            <p>The Web Vulnerability Scanner identifies potential security vulnerabilities in web applications. By scanning for common vulnerabilities, it helps developers secure their applications and protect against potential threats.</p>
+        </div>
+
+        <!-- Text-to-Image Generation using Stable Diffusion 1.5 V Model -->
+        <div class="project">
+            <h2>Text-to-Image Generation using Stable Diffusion 1.5 V Model</h2>
+            <p>This project leverages the Stable Diffusion 1.5 V model to generate high-quality images from textual descriptions. The model uses advanced diffusion techniques to create visually appealing images that accurately represent the input text. This project demonstrates the capabilities of generative models in creating realistic and contextually relevant visuals.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitha's Academic Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5; /* Light background */
+            color: #333;
         }
 
-        /* Academic Table */
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6f61, #d93a2c); /* Red gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Academic Details Section */
+        .academic-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
         .academic-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
         }
 
         .academic-table th, .academic-table td {
@@ -173,82 +275,33 @@
         }
 
         .academic-table th {
-            background-color: #f2f2f2;
-            color: #000;
+            background-color: #f2f2f2; /* Light grey header background */
+            color: #000; /* Black color for headers */
         }
 
         .academic-table tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #f9f9f9; /* Alternating row colors */
         }
 
         .academic-table tr:hover {
-            background-color: #f1f1f1;
+            background-color: #f1f1f1; /* Highlight row on hover */
         }
 
         .summary {
             margin-top: 20px;
             font-size: 1.2em;
             line-height: 1.6;
-            color: #555;
-        }
-
-        .contact-info a {
-            color: #ff6f61;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+            color: #555; /* Dark grey for summary */
         }
     </style>
 </head>
 <body>
-
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-image"></div>
-        <h1>Logitha</h1>
-        <h2>B.Tech in Artificial Intelligence and Data Science</h2>
-        <p>I'm Logitha, a third-year student who is excited about exploring new horizons and making a positive impact. I am enthusiastic about learning and eager to embrace new challenges and opportunities.</p>
-        <div class="button-container">
-            <button onclick="scrollToSection('projects')"><span>Projects</span></button>
-            <button onclick="scrollToSection('academic')"><span>Academic Details</span></button>
-            <button onclick="scrollToSection('internships')"><span>Internships</span></button>
-            <button onclick="scrollToSection('contact')"><span>Contact Info</span></button>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="header" id="projects">
-        <h1>My Projects</h1>
-    </div>
-    <div class="section-content">
-        <div class="project">
-            <h2>Credit Card Fraud Detection</h2>
-            <p>This project involves developing a machine learning model to detect fraudulent credit card transactions. By analyzing transaction patterns and using various classification algorithms, the system aims to identify and prevent fraudulent activities effectively.</p>
-        </div>
-
-        <div class="project">
-            <h2>Book Recommendation System</h2>
-            <p>This system recommends books using the Google Books API. It includes sentiment analysis to enhance recommendations based on user reviews and preferences. The project aims to provide personalized book suggestions by analyzing user interests and feedback.</p>
-        </div>
-
-        <div class="project">
-            <h2>Web Vulnerability Scanner</h2>
-            <p>The Web Vulnerability Scanner identifies potential security vulnerabilities in web applications. By scanning for common vulnerabilities, it helps developers secure their applications and protect against potential threats.</p>
-        </div>
-
-        <div class="project">
-            <h2>Text-to-Image Generation using Stable Diffusion 1.5 V Model</h2>
-            <p>This project leverages the Stable Diffusion 1.5 V model to generate high-quality images from textual descriptions. The model uses advanced diffusion techniques to create visually appealing images that accurately represent the input text.</p>
-        </div>
-    </div>
-
-    <!-- Academic Section -->
-    <div class="header" id="academic">
+    <div class="header">
         <h1>Academic Details</h1>
     </div>
-    <div class="section-content">
+
+    <div class="academic-section">
+        <!-- Academic Table -->
         <table class="academic-table">
             <thead>
                 <tr>
@@ -259,6 +312,235 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Vijay Kashmir Higher Secondary School, Tirupur</td>
+                    <td>vidhya vikashni matriculation  Higher Secondary School, Tirupur</td>
                     <td>435</td>
-                    <td>87%</td
+                    <td>87%</td>
+                </tr>
+                <tr>
+                    <td>vidhya vikashni matriculation  Higher Secondary School, Tirupur</td>
+                    <td>538</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>KPR Institute of Engineering and Technology, Coimbatore</td>
+                    <td colspan="2">CGPA: 8.39</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Summary -->
+        <div class="summary">
+            <p>The above table summarizes my academic performance from secondary school through college. My education journey has been enriched by experiences in Tirupur and Coimbatore, contributing to my overall growth and learning.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitha's Internships</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5; /* Light background */
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6f61, #d93a2c); /* Red gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Internships Section */
+        .internships-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .internship {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .internship h2 {
+            color: #000000; /* Black color for titles */
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .internship p {
+            font-size: 1.1em;
+            color: #555; /* Dark grey color for descriptions */
+            line-height: 1.6;
+        }
+
+        .internship img {
+            width: 30%; /* Further reduced width for smaller images */
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: block; /* Ensures image is centered if needed */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .upload-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #ff6f61; /* Matching color with header */
+            text-decoration: none;
+            padding: 10px;
+            border: 2px solid #ff6f61; /* Border color matching the link */
+            border-radius: 5px;
+            background: #fff; /* Background color for the link */
+        }
+
+        .upload-link:hover {
+            background: #ff6f61; /* Background color on hover */
+            color: #fff; /* Text color on hover */
+            border: 2px solid #ff6f61; /* Border color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Internships</h1>
+    </div>
+
+    <div class="internships-section">
+        <!-- Spotnak Internship -->
+        <div class="internship">
+            <h2>Spotnak - Cloud Computing</h2>
+            <p>At Spotnak, I worked on cloud computing projects where I focused on hosting and launching websites using EC2 instances. My responsibilities included managing the deployment and ensuring the smooth operation of hosted applications.</p>
+            <img src="file:///C:/Users/LOGITHA/Downloads/intern%201.png" alt="Spotnak Internship">
+        </div>
+
+        <!-- CODTECH IT Solutions Internship -->
+        <div class="internship">
+            <h2>CODTECH IT Solutions - Machine Learning</h2>
+            <p>During my internship at CODTECH IT Solutions, I worked on various machine learning projects. Notably, I developed a Text-to-Image Generation application using advanced models to create visual content from textual descriptions.</p>
+            <img src="file:///C:/Users/LOGITHA/Downloads/intern%202.png" alt="CODTECH IT Solutions Internship">
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitha's Contact Information</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5; /* Light background */
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6f61, #d93a2c); /* Red gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .contact-info {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #000000; /* Black color for titles */
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            color: #555; /* Dark grey color for descriptions */
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #ff6f61; /* Matching color with header */
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Information</h1>
+    </div>
+
+    <div class="contact-section">
+        <!-- Location -->
+        <div class="contact-info">
+            <h2>Location</h2>
+            <p>Tirupur, Tamil Nadu, India</p>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-info">
+            <h2>Email</h2>
+            <p><a href="mailto:logithaarumugam1854@gmail.com">logithaarumugam1854@gmail.com</a></p>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-info">
+            <h2>LinkedIn</h2>
+            <p><a href="https://www.linkedin.com/in/logitha-a-246a74257/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-info">
+            <h2>GitHub</h2>
+            <p><a href="https://github.com/LogithaAK" target="_blank">GitHub Profile</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
